@@ -18,9 +18,24 @@
 				}
 
 				#nav {
-					background-color: rgba(24, 28, 34, 0.8);
 					padding-left: 1em;
 					padding-right: 1em;
+				} 
+
+				/*
+				This works, but I don't know why.
+				I shouldn't have to change the opacity to almost
+				zero for the background-color to stay the same.
+
+				.nav > li > a:hover {
+					background-color: rgba(24, 28, 34, 0.01);
+				}*/
+				#nav {
+					background-color: rgba(24, 28, 34, 0.8);
+				}
+
+				.nav > li > a:hover {
+					background-color: rgba(24, 28, 34, 0.8);
 				}
 			}
 		</style>

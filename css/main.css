@@ -27,6 +27,10 @@ svg {
 	fill: white;
 }
 
+svg:hover {
+	fill: #D87E28;
+}
+
 #nav {
 	background-color: #181C22;
 	padding: .5em;
@@ -38,6 +42,14 @@ a {
 	color: white;
 }
 
-.nav > li > a:hover, svg:hover {
+/* !important -Overides bootstrap */
+
+.nav > li > a:hover {
 	color: #D87E28;
 }
+
+#nav, .nav > li > a:hover {
+	background-color: #181C22;
+}
+
+
