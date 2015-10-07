@@ -32,63 +32,111 @@ svg:hover {
 }
 
 #nav {
+	font-size: 16px;
 	background-color: #181C22;
-	padding: .5em;
+	padding-left: 15px;
 	font-variant: small-caps;
 	text-decoration: none;
+	position: absolute;
+	width: 100%;
+	border: none;
 }
 
-a {
+.nav > li, .navbar-header {
+	padding: .5em;
+}
+
+
+.collapse > .nav > li > a {
 	color: white;
 }
 
 /* !important -Overides bootstrap */
 
-.nav > li > a:hover {
+.collapse > .nav > li > a:hover {
 	color: #D87E28;
 }
 
 #nav, .nav > li > a:hover {
-	background-color: blue;
+	background-color: #181C22;
 }
 
-h1 {
+#dawg {
 	padding-top: 3em;
 }
 
+#hiddenp, #headline > svg {
+	display: none;
+}
+
+#headline {
+	font-style: italic;
+}
+
 @media screen and (min-width: 768px) {
-	h1 {
+	body {
+		font-size: 36px;
+	}
+
+	#dawg {
 		background-image: url("../img/background-sm.jpg");
 		color: white;
 		text-align: right;
 		min-height: 550px;
 	}
+
 	h2 {
 		text-align: center;
 		margin-bottom: 1 em;
 	}
 
 	#nav {
-		padding-left: 1em;
-		padding-right: 1em;
 		background-color: rgba(24, 28, 34, 0.8);
-	} 
+	}
 
 	.nav > li > a:hover {
 		background-color: none;
 	}
+
+	.nav > li, .navbar-header {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+	#hiddenp, #headline > svg {
+		display: block;
+	}
+
+	#headline > svg {
+		height: 1.5em;
+		margin: auto;
+		margin-bottom: 1em;
+		fill: #D87E28;
+	}
+
+	#headline {
+		text-align: center;
+		font-size: 1.25em;
+		padding-top: 3em;
+		padding-bottom: 3em;
+	}
+
 }
 
 @media screen and (min-width: 992px) {
-	h1 {
+	#dawg {
 		background-image: url("../img/background-md.jpg");
+	}
+	h1 {
 		font-size: 4em;
 	}
 }
 
 @media screen and (min-width: 1200px) {
-	h1 {
+	#dawg {
 		background-image: url("../img/background-lg.jpg");
+		background-size: cover;
+		background-repeat: 0;
 	}
 }
 
