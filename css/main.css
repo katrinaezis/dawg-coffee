@@ -73,6 +73,19 @@ svg:hover {
 	font-style: italic;
 }
 
+.col-sm-4 > ul > li {
+	list-style-type: none;
+}
+
+#cafe {
+	text-align: center;
+	background-color: #dbdce3;
+}
+
+#map {
+	border-radius: 5px;
+}
+
 @media screen and (min-width: 768px) {
 	body {
 		font-size: 36px;
