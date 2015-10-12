@@ -18,11 +18,20 @@ h1, h2, h3 {
 	font-family: Raleway, "Helvetica Neue", sans-serif;
 }
 
+h1 {
+	font-size: 3em;
+}
+
 h2 {
 	color: #BC6026;
 }
 
 svg {
+	height: 1.5em;
+	fill: #D87E28;
+}
+
+a > svg {
 	height: 1em;
 	fill: white;
 }
@@ -62,7 +71,8 @@ svg:hover {
 }
 
 #dawg {
-	padding-top: 3em;
+	padding-top: 4em;
+	padding-bottom: 1em;
 }
 
 #hiddenp, #headline > svg {
@@ -73,22 +83,63 @@ svg:hover {
 	font-style: italic;
 }
 
-.col-sm-4 > ul > li {
-	list-style-type: none;
-}
-
 #cafe {
 	text-align: center;
 	background-color: #dbdce3;
+	overflow: hidden;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+.col-sm-4 > ul > li {
+	list-style-type: none;
+	text-align: center;
+	font-size: .75em;
+} 
+
+#cafe li, #cafe img {
+	padding: 2%;
 }
 
 #map {
 	border-radius: 5px;
+	max-width: 100%;
+}
+
+#story {
+	background-color: #dbdce3;
+	overflow: hidden;
+}
+
+#right {
+	float: right;
+	max-height: 300px;
+	margin-left: 1em;
+	border-radius: 5px;
+}
+
+#menu {
+	overflow: hidden;
+	padding: 5%;
+}
+
+footer {
+	overflow: hidden;
+	border-top: 3px solid #D87E28;
+	font-size: 12px;
+	padding-top: 1em;
+	clear: both;
+	background-color: #afb3c2;
+}
+
+dd {
+	margin-left: 1em;
+	font-style: italic;
 }
 
 @media screen and (min-width: 768px) {
 	body {
-		font-size: 36px;
+		font-size: 20px;
 	}
 
 	#dawg {
@@ -134,6 +185,14 @@ svg:hover {
 		padding-bottom: 3em;
 	}
 
+	#right {
+		max-height: 400px;
+	}
+
+	footer .col-sm-9 {
+		text-align: right;
+	}
+
 }
 
 @media screen and (min-width: 992px) {
@@ -143,6 +202,10 @@ svg:hover {
 	h1 {
 		font-size: 4em;
 	}
+
+	.col-sm-4 > ul > li {
+		font-size: 1em;
+	}
 }
 
 @media screen and (min-width: 1200px) {
@@ -150,6 +213,10 @@ svg:hover {
 		background-image: url("../img/background-lg.jpg");
 		background-size: cover;
 		background-repeat: 0;
+	}
+
+	.col-sm-4 > ul > li {
+		font-size: 1.5em;
 	}
 }
 
