@@ -1,0 +1,19 @@
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css');
+
+/* Importing Raleway and Lato from Google fonts*/
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300italic,300);
+
+/*Importing Font Awesome from CDN*/
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+
+$font-backup: "Helvetica Neue", sans-serif;
+$orange: #D87E28;
+$backg: #E9EAEE;
+
+body {
+	font-family: Lato, $font-backup;
+	font-size: 16px;
+	font-weight: 300;
+	background-color: $backg;
+}
