@@ -8,13 +8,13 @@
 /* Importing Raleway and Lato from Google fonts*/
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300italic,300);
-@import url(https://fonts.googleapis.com/css?family=Josefin+Slab);
+/*@import url(https://fonts.googleapis.com/css?family=Josefin+Slab);*/
 
 /*Importing Font Awesome from CDN*/
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
 
 body {
-	font-family: 'Josefin Slab', serif;
+	font-family: Lato, "Helvetica Neue", sans-serif;
 	font-size: 16px;
 	font-weight: 300;
 	background-color: #E9EAEE;
